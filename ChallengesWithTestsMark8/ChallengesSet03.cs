@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 
 namespace ChallengesWithTestsMark8
@@ -21,15 +22,22 @@ namespace ChallengesWithTestsMark8
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
+            if (numbers == null || !numbers.Any())
+            {
+                return false;
+            }
             int sum = 0;
             foreach (int i in numbers)
-            {
                 if (i % 2 != 0)
-                {
-                    sum += sum;
-                }
-            }
-            return sum % 2 != 0 ? true : false;
+               {
+                   sum += i;
+               }
+                //if (i % 2 != -1)
+                //{
+                //    sum += sum;
+                //}
+
+            return (sum % 2 != 0 ? true: false);
         }
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
@@ -67,7 +75,14 @@ namespace ChallengesWithTestsMark8
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
-            return dividend / divisor;
+            if (divisor == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return dividend / divisor;
+            }
         }
 
         public int LastMinusFirst(int[] nums)
@@ -80,7 +95,7 @@ namespace ChallengesWithTestsMark8
             List<int> oddNumbersUnder100 = new List<int>();
             for (int i = 0; i < 100; i++)
             {
-                if (1 % 2 != 0)
+                if (i % 2 != 0)
                 {
                     oddNumbersUnder100.Add(i);
                 }

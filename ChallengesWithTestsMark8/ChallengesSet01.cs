@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Security;
 
 namespace ChallengesWithTestsMark8
 {
@@ -45,12 +46,19 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            return $"Hello {nameOfPerson}";
+            if (nameOfPerson == "")
+            {
+                return "Hello!";
+            }
+            else
+            {
+                return $"Hello, {nameOfPerson}!";
+            }
         }
 
         public string GetHey()
         {
-            return "HEY";
+            return "HEY!";
         }
     }
 }
