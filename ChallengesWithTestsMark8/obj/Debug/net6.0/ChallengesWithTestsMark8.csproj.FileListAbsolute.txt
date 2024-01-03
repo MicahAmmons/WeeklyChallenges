@@ -12,3 +12,4 @@ C:\Users\micah\OneDrive\Desktop\Repos\WeeklyChallenges\ChallengesWithTestsMark8\
 C:\Users\micah\OneDrive\Desktop\Repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.pdb
 C:\Users\micah\OneDrive\Desktop\Repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.genruntimeconfig.cache
 C:\Users\micah\OneDrive\Desktop\Repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ref\ChallengesWithTestsMark8.dll
+C:\Users\micah\OneDrive\Desktop\Repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.sourcelink.json
